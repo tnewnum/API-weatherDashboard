@@ -1,0 +1,56 @@
+body {
+    background-color:lightgrey;
+}
+
+.header {
+    background-color: #5D6D7E; 
+    height: 1.5in;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: black  ;
+    font-weight: 900;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+
+
+.btn {
+    background-color:#1FE819 ;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main {
+    display: flex;
+}
+
+.search {
+    width: 25%;
+}
+
+.forcast {
+    width: 100%;
+}
+
+.today {
+    border: solid;
+    border-radius: 5px;
+}
+
+.fiveday {
+    display: flex;
+    justify-content: space-around;
+    /* border: solid;
+    border-radius: 5px; */
+}
+
+.day {
+    width: 25%;
+    border: solid;
+    border-radius: 10px;
+}
+
