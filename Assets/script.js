@@ -3,5 +3,3 @@ fetch(weather)
 .then((response) => response.json())
 .then((data) => console.log(data));
 
-
-this is my branch 
