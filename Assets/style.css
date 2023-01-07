@@ -4,7 +4,7 @@ body {
 }
 
 .header {
-    background-color: #5D6D7E; 
+    background-color: purple; 
     height: 1.5in;
     display: flex;
     justify-content: center;
