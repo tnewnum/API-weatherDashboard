@@ -1,5 +1,11 @@
 let searchBtn = document.querySelector('.btn')
 
+let timeDate = dayjs().format('MMMM DD, YYYY H:mm a');
+  $('#cityName').text(timeDate);
+    function timeUpkeep () {
+      setInterval()
+    }
+
 
 function search() {
     
@@ -20,6 +26,9 @@ function search() {
         console.log(weather)
 
                   for (let i = 1; i < 6; i++) {
+                        
+
+
             console.log(weather[i*8-1].weather);
             console.log(weather[i*8-1].main.temp);
             console.log(weather[i*8-1].wind.speed);

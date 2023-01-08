@@ -37,6 +37,10 @@ main {
     width: 100%;
 }
 
+#cityName {
+    font-weight: 900;
+}
+
 .today {
     border: solid;
     border-radius: 5px;
