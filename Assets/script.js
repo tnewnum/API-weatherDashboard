@@ -66,10 +66,11 @@ function search() {
             let windEl = document.getElementById('wind')
             windEl.textContent = "Current Wind: " + wind + " MPH";
 
-
-
+            //prints current humity to page
             let humidity = weather[0].main.humidity;
             console.log(humidity)
+            let humidEl = document.getElementById('humid')
+            humidEl.textContent = "Current Humidity: " + humidity + " %";
 
         
 
