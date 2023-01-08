@@ -21,10 +21,12 @@ function search() {
 
         let list = document.querySelector('#searchLog')
 
-        let p = document.createElement('p')
+        let button = document.createElement('buttion')
+        button.setAttribute('type', 'submit');
+        button.setAttribute('class', 'btn2');
 
-        list.append(p);
-        p.textContent=savedCity
+        list.append(button);
+        button.textContent=savedCity
 
 
         fetch(`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=16c3d00c60dcdcff5c5a0a91a5169a6a&units=imperial`)
@@ -74,15 +76,15 @@ function search() {
 
         
 
-            // for (let i = 1; i < 6; i++) {
+            for (let i = 1; i < 6; i++) {
 
 
 
-            // // console.log(weather[i*8-1].weather[0].icon);
-            // // console.log(weather[i*8-1].main.temp);
-            // // console.log(weather[i*8-1].wind.speed);
-            // // console.log(weather[i*8-1].main.humidity);
-            // }
+            console.log(weather[i*8-1].weather[0].icon);
+            console.log(weather[i*8-1].main.temp);
+            console.log(weather[i*8-1].wind.speed);
+            console.log(weather[i*8-1].main.humidity);
+            }
         })   
 
     })
