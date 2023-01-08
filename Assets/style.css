@@ -33,6 +33,10 @@ main {
     width: 25%;
 }
 
+.searched {
+    font-weight: 900;
+}
+
 .forcast {
     width: 100%;
 }
