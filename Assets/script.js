@@ -24,7 +24,6 @@ function search() {
         let button = document.createElement('buttion')
         button.setAttribute('type', 'submit');
         button.setAttribute('class', 'btn2');
-
         list.append(button);
         button.textContent=savedCity
 
@@ -74,17 +73,42 @@ function search() {
             let humidEl = document.getElementById('humid')
             humidEl.textContent = "Current Humidity: " + humidity + " %";
 
-        
-
+            
+            // let futureIconEl = []
+            let futureTempEl = []
+            let futureWindEl = []
+            let futureHumidEl = []
+            
             for (let i = 1; i < 6; i++) {
+            
+                // futureIconEl.push([i*8-1].weather[0].icon);
+                futureTempEl.push(weather[i*8-1].main.temp);
+                futureWindEl.push(weather[i*8-1].wind.speed);
+                futureHumidEl.push(weather[i*8-1].main.humidity);      
+                
+                
+                // let futureIcon = document.querySelectorAll('.icon')
+                let futureTemp = document.querySelectorAll('.temp')
+                let futureWind = document.querySelectorAll('.wind')
+                let futureHumid = document.querySelectorAll('.humid')
+                
+                // futureIcon[i-1].innerText = "Humidity: " + futureHumidEl[i-1] + " %";
+                // let icon = 'http://openweathermap.org/img/w/' + iconCode + '.png'
+                // var weatherIcon = document.createElement('img');
+                // weatherIcon.setAttribute('src', icon);
+                // weatherIcon.setAttribute('alt', 'weather icon');
+                // iconEl.append(weatherIcon);
 
 
 
-            console.log(weather[i*8-1].weather[0].icon);
-            console.log(weather[i*8-1].main.temp);
-            console.log(weather[i*8-1].wind.speed);
-            console.log(weather[i*8-1].main.humidity);
+
+                futureTemp[i-1].innerText = "Temperature: " + futureHumidEl[i-1] + " F"; 
+                futureWind[i-1].innerText = "Wind: " + futureWindEl[i-1] + " MPH"; 
+                futureHumid[i-1].innerText = "Humidity: " + futureHumidEl[i-1] + " %";  
+                            
             }
+
+            
         })   
 
     })
