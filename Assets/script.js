@@ -51,13 +51,16 @@ function search() {
             let icon = 'http://openweathermap.org/img/w/' + iconCode + '.png'
             var weatherIcon = document.createElement('img');
             weatherIcon.setAttribute('src', icon);
-            weatherIcon.setAttribute('class','weatherImg');
             weatherIcon.setAttribute('alt', 'weather icon');
             iconEl.append(weatherIcon);
             
             //prints the temp to the page for Current Weather
             let temp = weather[0].main.temp;
             console.log(temp);
+            let tempEl = document.getElementById('temp')
+            tempEl.textContent = "Current Temperature:" + temp + "F";
+
+
 
 
             let wind = weather[0].wind.speed;
