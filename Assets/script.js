@@ -58,13 +58,16 @@ function search() {
             let temp = weather[0].main.temp;
             console.log(temp);
             let tempEl = document.getElementById('temp')
-            tempEl.textContent = "Current Temperature:" + temp + "F";
+            tempEl.textContent = "Current Temperature: " + temp + " F";
 
-
-
-
+            //prints the wind to the page for Current Weather
             let wind = weather[0].wind.speed;
             console.log(wind);
+            let windEl = document.getElementById('wind')
+            windEl.textContent = "Current Wind: " + wind + " MPH";
+
+
+
             let humidity = weather[0].main.humidity;
             console.log(humidity)
 
