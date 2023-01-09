@@ -16,7 +16,7 @@ Enter desired city into search bar, and click search. Info automatically display
 ## Credits
 
 @Nicholas Herman - https://github.com/nwherman1724
-@John
+@John - https://github.com/scicluna
 @Benicio Lopez = Tutor! 
 
 ## License
