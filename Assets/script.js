@@ -74,37 +74,61 @@ function search() {
             humidEl.textContent = "Current Humidity: " + humidity + " %";
 
             
-            // let futureIconEl = []
-            let futureTempEl = []
-            let futureWindEl = []
-            let futureHumidEl = []
+            let futureIconEl = []
+            // let futureTempEl = []
+            // let futureWindEl = []
+            // let futureHumidEl = []
             
             for (let i = 1; i < 6; i++) {
             
-                // futureIconEl.push([i*8-1].weather[0].icon);
-                futureTempEl.push(weather[i*8-1].main.temp);
-                futureWindEl.push(weather[i*8-1].wind.speed);
-                futureHumidEl.push(weather[i*8-1].main.humidity);      
+                
+                // futureTempEl.push(weather[i*8-1].main.temp);
+                // futureWindEl.push(weather[i*8-1].wind.speed);
+                // futureHumidEl.push(weather[i*8-1].main.humidity);      
                 
                 
-                // let futureIcon = document.querySelectorAll('.icon')
-                let futureTemp = document.querySelectorAll('.temp')
-                let futureWind = document.querySelectorAll('.wind')
-                let futureHumid = document.querySelectorAll('.humid')
+                // let futureTemp = document.querySelectorAll('.temp')
+                // let futureWind = document.querySelectorAll('.wind')
+                // let futureHumid = document.querySelectorAll('.humid')
                 
-                // futureIcon[i-1].innerText = "Humidity: " + futureHumidEl[i-1] + " %";
-                // let icon = 'http://openweathermap.org/img/w/' + iconCode + '.png'
-                // var weatherIcon = document.createElement('img');
-                // weatherIcon.setAttribute('src', icon);
-                // weatherIcon.setAttribute('alt', 'weather icon');
-                // iconEl.append(weatherIcon);
+                
+              
+                futureIconEl.push(weather[i*8-1].weather[0].icon)                
+                console.log(futureIconEl[0])
+                console.log(futureIconEl[1])
+                console.log(futureIconEl[2])
+                console.log(futureIconEl[3])
+                console.log(futureIconEl[4])
+
+                let futureIcon1 = document.getElementById('icon1')
+
+                let day1Icon = 'http://openweathermap.org/img/w/' + futureIconEl[0] + '.png'
+                var weatherIconDay1 = document.createElement('img');
+                    weatherIconDay1.setAttribute('src', day1Icon)
+                    futureIcon1.append(weatherIconDay1)
+
+
+                
+
+              
+
+                    // let img = 'http://openweathermap.org/img/w/' + futureIconEl + '.png'
+
+                    // let fiveDayIcon = document.createElement('img')
+                    // fiveDayIcon.setAttribute('src', img )
+    
+    
+                    // futureIcon1.append(fiveDayIcon)
+
+
+                              
 
 
 
 
-                futureTemp[i-1].innerText = "Temperature: " + futureHumidEl[i-1] + " F"; 
-                futureWind[i-1].innerText = "Wind: " + futureWindEl[i-1] + " MPH"; 
-                futureHumid[i-1].innerText = "Humidity: " + futureHumidEl[i-1] + " %";  
+                // futureTemp[i-1].innerText = "Temperature: " + futureHumidEl[i-1] + " F"; 
+                // futureWind[i-1].innerText = "Wind: " + futureWindEl[i-1] + " MPH"; 
+                // futureHumid[i-1].innerText = "Humidity: " + futureHumidEl[i-1] + " %";  
                             
             }
 
