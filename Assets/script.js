@@ -11,7 +11,10 @@ let timeDate = dayjs().format('MMMM DD, YYYY H:mm a');
                   
 
 //overall function that runs the whole page
+
 function search() {
+   
+
         //event listener for the click of th button and hold the user input value and saves to local storage
         searchBtn.addEventListener('click', () => {
         let city = document.querySelector('.city').value;
@@ -38,16 +41,17 @@ function search() {
         .then(function (data) {
             console.log(data);
             const cityEl = document.getElementById('cityName');
-            const iconEl = document.getElementById('icon')
             
             //displays the city searched from the API along with current date and time from JS
             cityEl.textContent = `${data.city.name}` + " " + dayjs().format('MMMM DD, YYYY H:mm a');
-
+            
             //establisishes weather as an array and then simplifies data.list to weather
             let weather = []
             weather = data.list
             console.log(weather)
             
+            let iconEl = document.getElementById('icon')
+            iconEl.innerHTML =''
             //prints the weather icon to the page for Current weather
             let iconCode = weather[0].weather[0].icon;
             console.log(iconCode);
@@ -81,6 +85,7 @@ function search() {
             let futureWindEl = []
             let futureHumidEl = []
             let futureDateEl = []
+    
             
             //for loop to loop through the data in the API to get every 5days
             for (let i = 1; i < 6; i++) {
@@ -89,7 +94,7 @@ function search() {
                 futureTempEl.push(weather[i*8-1].main.temp);
                 futureWindEl.push(weather[i*8-1].wind.speed);
                 futureHumidEl.push(weather[i*8-1].main.humidity);
-                futureDateEl.push(weather[i*8-1].dt)      
+                futureDateEl.push(weather[i*8-1].dt_txt)      
                 
                 //getting classes from the HTML to use to print info to
                 let futureTemp = document.querySelectorAll('.temp')
@@ -103,7 +108,8 @@ function search() {
                 futureHumid[i-1].innerText = "Humidity: " + futureHumidEl[i-1] + " %";  
                 futureDate[i-1].innerText = futureDateEl[i-1]
                 
-                //all the below displays the future weather icons to the page 
+                //all the below displays the future weather icons to the page
+                
                 futureIconEl.push(weather[i*8-1].weather[0].icon)                
                 console.log(futureIconEl[0])
                 console.log(futureIconEl[1])
@@ -112,8 +118,12 @@ function search() {
                 console.log(futureIconEl[4])
 
                let futureIcon = document.querySelectorAll('.icon')
+                futureIcon[i-1].innerHTML=''
 
-                let day1Icon = 'http://openweathermap.org/img/w/' + futureIconEl[0] + '.png'
+                let day1Icon = 'http://openweathermap.org/img/w/' + futureIconEl[i-1] + '.png'
+                console.log(day1Icon)
+
+
                 var weatherIconDay1 = document.createElement('img');
                     weatherIconDay1.setAttribute('src', day1Icon)
                     futureIcon[i-1].append(weatherIconDay1)          

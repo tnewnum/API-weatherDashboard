@@ -17,6 +17,7 @@ Enter desired city into search bar, and click search. Info automatically display
 
 @Nicholas Herman - https://github.com/nwherman1724
 @John
+@Benicio Lopez = Tutor! 
 
 ## License
 
