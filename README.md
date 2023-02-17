@@ -26,7 +26,7 @@ This project is not coverd under any license at this time
 
 ## Credits
 
-Nicholas Herman - github,.com/nwherman1724  &   github.com/scicluna
+Nicholas Herman - github.com/nwherman1724  &   github.com/scicluna
 
 ## Test
 
