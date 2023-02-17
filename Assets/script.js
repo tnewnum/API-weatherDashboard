@@ -24,7 +24,7 @@ function search() {
         //gets searched city from local storage and displays it on the page as a button under the search section
         let savedCity = localStorage.getItem('searchedCity')
         let list = document.querySelector('#searchLog')
-        let button = document.createElement('buttion')
+        let button = document.createElement('button')
         button.setAttribute('type', 'submit');
         button.setAttribute('class', 'btn2');
         list.append(button);

@@ -1,30 +1,43 @@
-# newnum-API-weatherDashboard
+# API-weatherDashboard
+
 
 ## Description
 
-A weather app to diplay the current weather for a searched city, along with the 5 day forcast. It remembers the cities searched and can click on those buttons to research the same cities (eventually)
+A weather app to display the current and 5 day weather forcast. Recently searched cities will populate on the lefft side of the page. 
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [License](#license)
+- [Credits](#credits)
 
 ## Installation
 
-nothing to install
+There is nothing to install for this project 
 
 ## Usage
 
-Enter desired city into search bar, and click search. Info automatically displays 
-![image](https://user-images.githubusercontent.com/117390778/211298346-97f59589-451f-41b7-b1db-3a9a731c040d.png)
-
-## Credits
-
-@Nicholas Herman - https://github.com/nwherman1724
-@John - https://github.com/scicluna
-@Benicio Lopez = Tutor! 
+Enter the desired city into the search bar, click on search and the requested city's weather infromation will populate.
 
 ## License
 
-none 
+This project is not coverd under any license at this time
 
-## Badges
+## Credits
 
-none
+Nicholas Herman - github,.com/nwherman1724  &   github.com/scicluna
 
+## Test
 
+Currently there are no tests
+
+## Questions
+
+If you have any questions - use the links below to reach out!
+
+Github Username: @tnewnum
+
+Github webpage: https://github.com/tnewnum
+
+Email me with any additional questions: thomas.newnum@gmail.com
