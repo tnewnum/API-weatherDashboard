@@ -1,38 +1,42 @@
-# API-weatherDashboard
+# API - weatherDashboard
 
 
-## Description
+
+## 📘 Description
 
 A weather app to display the current and 5 day weather forcast. Recently searched cities will populate on the lefft side of the page. 
 
-## Table of Contents
+## 📑 Table of Contents 
 
 - [Installation](#installation)
 - [Usage](#usage)
 - [License](#license)
 - [Credits](#credits)
 
-## Installation
+## 🛠️ Installation 
 
-There is nothing to install for this project 
+There is no installation required for this application.
 
 ## Usage
 
 Enter the desired city into the search bar, click on search and the requested city's weather infromation will populate.
+![image](https://user-images.githubusercontent.com/117390778/222484070-5b1bf516-f789-4919-8d68-6e4c2148cb11.png)
 
-## License
 
-This project is not coverd under any license at this time
+## 🔒 License
 
-## Credits
+This project is coverd under No License at this time!
 
-Nicholas Herman - github.com/nwherman1724  &   github.com/scicluna
+## 🤝 Credits
 
-## Test
+Nicholas Herman - github.com/nwherman1724  
+John - github.com/scicluna
 
-Currently there are no tests
+## ⚡ Test
 
-## Questions
+No Tests currently available
+
+## ❓ Questions
 
 If you have any questions - use the links below to reach out!
 
